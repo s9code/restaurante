@@ -23,4 +23,4 @@ Construir una página web de un restaurante con navegación por pestañas aplica
 
 ## 🚀 Enlace en vivo
 
-Pendiente de publicación.
+https://restaurante-nine-jet.vercel.app/
