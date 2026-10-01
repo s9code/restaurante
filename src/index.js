@@ -1,6 +1,7 @@
 import { inicio } from "./inicio.js";
 import { menu } from "./menu.js";
 import { contacto } from "./contacto.js";
+import "./style.css"
 
 const btnInicio = document.querySelector("#btnInicio");
 const btnMenu = document.querySelector("#btnMenu");
