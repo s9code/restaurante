@@ -1,3 +1,4 @@
+// Construye la carta y la añade al contenedor compartido de las pestañas.
 export function menu() {
 
     const contenido = document.querySelector("#content");
@@ -10,6 +11,7 @@ export function menu() {
     contenido.appendChild(carta);
 
 
+    // Los datos de la carta se mantienen separados de la creación de elementos.
     const platos = [
         {
             nombre: "Edamame",
@@ -37,6 +39,7 @@ export function menu() {
 
     ];
     
+    // Cada vuelta crea una estructura nueva para un plato usando sus datos.
     platos.forEach((plato) => {
 
         const contenedor = document.createElement("div");
@@ -57,5 +60,4 @@ export function menu() {
         precio.textContent = plato.precio;
 
     });
-
 }
