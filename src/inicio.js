@@ -5,8 +5,7 @@ export function inicio() {
     const cabecera = document.createElement("h1");
     const descripRestaurante = document.createElement("p");
 
-    contenido.appendChild(cabecera);
-    contenido.appendChild(descripRestaurante);
+    contenido.append(cabecera, descripRestaurante);
 
     cabecera.textContent = "Restaurante Sakai";
 

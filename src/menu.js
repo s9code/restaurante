@@ -50,10 +50,8 @@ export function menu() {
 
         const precio = document.createElement("p");
 
-        contenido.appendChild(contenedor);
-        contenedor.appendChild(nombre);
-        contenedor.appendChild(descrip);
-        contenedor.appendChild(precio);
+        contenido.append(contenedor);
+        contenedor.append(nombre, descrip, precio);
         
         nombre.textContent = plato.nombre;
         descrip.textContent = plato.descripcion;
