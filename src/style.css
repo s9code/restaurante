@@ -1,3 +1,119 @@
+/* Base compartida por las tres vistas. */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: red;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f5f0e7;
+    color: #302b28;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    padding: 24px 16px;
+    background-color: #fffaf3;
+    border-bottom: 1px solid #ddd3c6;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav button {
+    padding: 10px 22px;
+    border: 1px solid #853a36;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #78312e;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #78312e;
+    color: #fffaf3;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #78312e;
+    outline-offset: 4px;
+}
+
+/* El ancho máximo mantiene cómodas las líneas de texto. */
+#content {
+    width: calc(100% - 32px);
+    max-width: 760px;
+    margin: 40px auto;
+    padding: 40px;
+    border: 1px solid #ddd3c6;
+    border-top: 4px solid #78312e;
+    border-radius: 8px;
+    background-color: #fffaf3;
+}
+
+h1,
+h2 {
+    font-family: Georgia, serif;
+    line-height: 1.2;
+}
+
+h1 {
+    margin: 0 0 24px;
+    color: #78312e;
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin: 0 0 8px;
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 0 0 16px;
+}
+
+a {
+    color: #78312e;
+    text-underline-offset: 3px;
+    overflow-wrap: anywhere;
+}
+
+#content > a {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+/* Cada div directo de la carta agrupa un plato; su último párrafo es el precio. */
+#content > div {
+    padding: 24px 0;
+    border-top: 1px solid #ddd3c6;
+}
+
+#content > div > p:last-child {
+    margin-bottom: 0;
+    color: #78312e;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    #content {
+        margin: 24px auto;
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav button {
+        padding: 10px 16px;
+    }
 }
