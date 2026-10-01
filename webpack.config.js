@@ -29,8 +29,15 @@ module.exports = {
                 // Se aplican de derecha a izquierda: procesan el CSS y lo insertan en la página.
                 use: ["style-loader", "css-loader"],
             },
+            {
+                // Genera un archivo de imagen y permite importar su URL.
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                type: "asset/resource",
+            },
         ],
     },
+
+    
 
 };
 
